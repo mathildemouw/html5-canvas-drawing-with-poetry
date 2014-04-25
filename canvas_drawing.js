@@ -9,10 +9,10 @@ function RandomCanvas ( canvasId ) {
 RandomCanvas.prototype = {
 	drawWithWords: function ( stanza ) {
 			this.context.strokeStyle = "#ff00dd";
+			this.context.moveTo( stanza[ 0 ].charCodeAt(), stanza[ 0 ].charCodeAt() );
 		for ( var x = stanza.length - 1; x >= 0; x-- ) {
 			x_coord = stanza[ x ].charCodeAt();
-			this.context.moveTo( x_coord, 20 );
-			this.context.lineTo( x_coord, 70 );
+			this.context.lineTo( x_coord, (Math.random()*x_coord) );
 			this.context.stroke();
 		}
 	},
@@ -26,7 +26,7 @@ snazzyGradient.addColorStop( 1, "black" );
 my_canvas.context.fillStyle = snazzyGradient;
 my_canvas.context.fillRect( 0, 0, 290, 150 );
 
-var myStanza =  "This is just to say" ;
+var myStanza =  "When I was a geisha he was a samurai" ;
 my_canvas.drawWithWords( myStanza );
 
 };
