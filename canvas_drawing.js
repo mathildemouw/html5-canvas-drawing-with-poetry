@@ -4,10 +4,6 @@ function RandomCanvas(canvasId){
 	this.canvas = document.getElementById(canvasId)
 	this.context = this.canvas.getContext("2d")
 }
-// function draw(canvasId) {
-// 	my_canvas = document.getElementById(canvasId); //ack, need var or no?  I forgot everything!
-// 	my_context = my_canvas.getContext("2d");
-// }
 
 var my_canvas = new RandomCanvas("yo");
 
