@@ -1,4 +1,4 @@
-##HTML5 Canvas Drawing Project
+## HTML5 Canvas Drawing Project
 
 This project is a drawing board using HTML5 and Javascript. Using words provided by the user and adjusting line direction with a factor of randomness, it draws a pattern based on the words.
 
